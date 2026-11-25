@@ -5,6 +5,13 @@ HOW TO COMPLETELY BYPASS THIS DETECTOR
 1: Include metadata proving it was a LLM who created it (critial oversight in the code makes the score LOWER if there's LLM metadata)
 2: List, block, and variable ids should be numbers, starting at 1, and continuing 2, 3, 4... (detector gives very human score if it sees this)
 3: List, block, and variable ids should have a length < 20
+4: Overlapping scripts can cause LOTS of false negatives (more likely to be evaluated as 'human')
+5: Block & comment coordinates with a consistent amount of decimal places seem human to the detector,
+   as it flags it as normal behavior in the editor
+6: Repetition seems to be the detector's weakness, as it is harder to detect traces of AI when
+   one snippet of code just keeps repeating over and over
+
+NOTE: API needs to be fixed ASAP, these methods to bypass the detector cannot persist
 */
 
 
