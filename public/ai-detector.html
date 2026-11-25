@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <!--
+REMOVE THIS BEFORE PROD!
+HOW TO COMPLETELY BYPASS THIS DETECTOR
+
+1: Include metadata proving it was a LLM who created it (critial oversight in the code makes the score LOWER if there's LLM metadata)
+2: List, block, and variable ids should be numbers, starting at 1, and continuing 2, 3, 4... (detector gives very human score if it sees this)
+3: List, block, and variable ids should have a length < 20
+    -->
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="nosnippet, noindex, noarchive" />
